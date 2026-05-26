@@ -1,0 +1,18 @@
+flowchart TD
+    A[Document input] --> B[Preprocessing]
+    B --> C{Readable text?}
+    C -->|Yes| D[Text extraction]
+    C -->|No| E[OCR processing]
+    E --> F[Normalized text]
+    D --> F
+
+    F --> G[NLP extraction]
+    F --> H[LLM extraction]
+
+    G --> I[Semantic classification]
+    H --> J[LLM validation]
+
+    I --> K[Decision orchestrator]
+    J --> K
+
+    K --> L[Final JSON output]

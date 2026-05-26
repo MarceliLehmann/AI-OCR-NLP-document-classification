@@ -1,0 +1,20 @@
+Subject: Request for case status update
+
+Date: 2025-01-15
+
+Sender:
+Example Citizen
+Example Street 10
+00-000 Example City
+
+Recipient:
+Example Public Office
+Document Processing Department
+
+Case number: CASE-2025-001
+
+Message:
+I am requesting an update regarding my administrative case.
+Please provide information about the current processing status and the expected response date.
+
+This is a synthetic document created only for portfolio demonstration purposes.

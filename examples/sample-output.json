@@ -1,0 +1,41 @@
+{
+  "document_metadata": {
+    "case_number": "CASE-2025-001",
+    "document_date": "2025-01-15",
+    "sender": {
+      "name": "Example Citizen",
+      "address": "Example Street 10, 00-000 Example City"
+    },
+    "recipient": {
+      "name": "Example Public Office",
+      "department": "Document Processing Department"
+    }
+  },
+  "classification": {
+    "department_code": "DEMO-UNIT",
+    "category_code": "DEMO-STATUS-REQUEST",
+    "category_name": "Case status request",
+    "confidence": 0.91
+  },
+  "extraction_candidates": {
+    "nlp_result": {
+      "case_number": "CASE-2025-001",
+      "document_date": "2025-01-15",
+      "confidence": 0.88
+    },
+    "llm_result": {
+      "case_number": "CASE-2025-001",
+      "document_date": "2025-01-15",
+      "confidence": 0.93
+    }
+  },
+  "decision_orchestrator": {
+    "selected_source": "hybrid",
+    "reasoning_summary": "Both extraction paths agreed on the key metadata. The final value was accepted after consistency validation.",
+    "requires_manual_review": false
+  },
+  "export": {
+    "schema_version": "demo-1.0",
+    "generated_from": "synthetic-example"
+  }
+}

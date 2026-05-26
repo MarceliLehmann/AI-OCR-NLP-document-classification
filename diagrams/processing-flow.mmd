@@ -1,0 +1,17 @@
+sequenceDiagram
+    participant User
+    participant Pipeline
+    participant OCR
+    participant NLP
+    participant LLM
+    participant Orchestrator
+    participant Output
+
+    User->>Pipeline: Upload document
+    Pipeline->>OCR: Extract text if needed
+    OCR-->>Pipeline: Normalized text
+    Pipeline->>NLP: Extract metadata
+    Pipeline->>LLM: Extract and validate metadata
+    NLP-->>Orchestrator: NLP result
+    LLM-->>Orchestrator: LLM result
+    Orchestrator->>Output: Final structured JSON
